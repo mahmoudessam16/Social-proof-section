@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 100px auto;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 100px, top left;
+}
+body .section-1 {
+  display: flex;
+  justify-content: space-between;
+}
+body .section-1 .info {
+  flex: 1;
+}
+body .section-1 .info h1 {
+  font-size: 60px;
+  margin-right: 100px;
+  color: hsl(300, 43%, 22%);
+  line-height: 0.8;
+}
+body .section-1 .info p {
+  margin-top: 20px;
+  color: hsl(303, 10%, 53%);
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 100px;
+  line-height: 1.4;
+}
+body .section-1 .rates {
+  flex: 1;
+}
+body .section-1 .rates .rate {
+  display: flex;
+  align-items: center;
+  width: 380px;
+  background-color: hsl(300, 24%, 96%);
+  margin: 15px;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+body .section-1 .rates .rate .stars {
+  margin-right: 30px;
+}
+body .section-1 .rates .rate:nth-child(2) {
+  margin-left: 60px;
+}
+body .section-1 .rates .rate:nth-child(3) {
+  margin-left: 120px;
+}
+body .section-2 {
+  display: flex;
+}
+body .section-2 .card {
+  background-color: hsl(300, 43%, 22%);
+  padding: 25px;
+  border-radius: 10px;
+  height: 230px;
+}
+body .section-2 .card .information {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+body .section-2 .card .information img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+body .section-2 .card .information .name h3 {
+  color: hsl(300, 24%, 96%);
+  font-weight: 500;
+  font-size: 18px;
+}
+body .section-2 .card .information .name span {
+  display: block;
+  margin-top: 5px;
+  color: hsl(333, 80%, 67%);
+}
+body .section-2 .card p {
+  color: hsl(300, 24%, 96%);
+  font-size: 15px;
+  line-height: 1.5;
+}
+body .section-2 .card:nth-child(1) {
+  margin: 0 15px 0 0;
+}
+body .section-2 .card:nth-child(2) {
+  margin: 15px 15px 0 15px;
+}
+body .section-2 .card:nth-child(3) {
+  margin: 30px 0 0 15px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 90% !important;
+    margin: 30px auto;
+  }
+  body {
+    background-image: url(./images/bg-pattern-bottom-mobile.svg), url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, top left;
+  }
+  .section-1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-1 .info {
+    text-align: center;
+  }
+  .section-1 .info h1 {
+    margin: 30px !important;
+    font-size: 35px !important;
+  }
+  .section-1 .info p {
+    margin: 20px !important;
+    line-height: 1.2 !important;
+    font-size: 15px !important;
+  }
+  .section-1 .rates .rate {
+    width: 95% !important;
+    margin: 10px !important;
+    padding: 15px !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-1 .rates .rate .stars {
+    margin-right: 0 !important;
+    margin-bottom: 5px;
+  }
+  .section-2 {
+    flex-direction: column;
+  }
+  .section-2 .card {
+    margin: 10px !important;
+    height: auto !important;
+  }
+}/*# sourceMappingURL=style.css.map */
